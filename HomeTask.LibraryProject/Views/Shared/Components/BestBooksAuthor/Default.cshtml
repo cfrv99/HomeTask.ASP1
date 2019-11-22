@@ -1,0 +1,13 @@
+﻿@model AuthorBookCountViewModel
+    <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+            <p class="card-text">@Model.AuthorName</p>
+        </div>
+    </div>
+
+
+@foreach (var item in Model.Books)
+{
+<p>@item.Name</p>
+}

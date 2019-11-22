@@ -1,0 +1,16 @@
+﻿@model BookDetailViewModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div class="card mb-3">
+    <img src="~/images/@Model.ImageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.BookName</h5>
+        <p class="card-text">@Model.BookTitle.</p>
+        <p class="card-text">@Model.AuthorName</p>
+        <p class="card-text"><small class="text-muted">@Model.ViewedCount</small></p>
+    </div>
+</div>
